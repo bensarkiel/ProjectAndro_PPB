@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "709968441333",
+    "firebase_url": "https://mycinema-69803-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "mycinema-69803",
+    "storage_bucket": "mycinema-69803.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:709968441333:android:8dea578bf4f527dab8babc",
+        "android_client_info": {
+          "package_name": "com.book.movieticketbooking"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "709968441333-3k1crl6vf13f9njpghfu8o9njgf8efvu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGnco1LdupUseyJrJI4c2crPHLm-i89ps"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "709968441333-3k1crl6vf13f9njpghfu8o9njgf8efvu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:709968441333:android:063ddd3f49251b90b8babc",
+        "android_client_info": {
+          "package_name": "com.example.moviez"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "709968441333-3k1crl6vf13f9njpghfu8o9njgf8efvu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGnco1LdupUseyJrJI4c2crPHLm-i89ps"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "709968441333-3k1crl6vf13f9njpghfu8o9njgf8efvu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:709968441333:android:9584034d81d0863bb8babc",
+        "android_client_info": {
+          "package_name": "com.sine.sineagol"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "709968441333-3k1crl6vf13f9njpghfu8o9njgf8efvu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGnco1LdupUseyJrJI4c2crPHLm-i89ps"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "709968441333-3k1crl6vf13f9njpghfu8o9njgf8efvu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
