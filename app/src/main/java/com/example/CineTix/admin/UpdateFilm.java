@@ -31,7 +31,7 @@ public class UpdateFilm extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.recview_update_film);
-        getSupportActionBar().setTitle("Update Show");
+        getSupportActionBar().setTitle("Update Film");
         getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.colorSplash)));
         getWindow().setStatusBarColor((ContextCompat.getColor(this,R.color.colorSplash)));
 

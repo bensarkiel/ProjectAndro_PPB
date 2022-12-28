@@ -37,7 +37,7 @@ public class LihatBooking extends AppCompatActivity {
         getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.colorSplash)));
         getWindow().setStatusBarColor((ContextCompat.getColor(this,R.color.colorSplash)));
 
-        getSupportActionBar().setTitle("My Booking");
+        getSupportActionBar().setTitle("Riwayat Pembelian Tiket");
         firebaseAuth = FirebaseAuth.getInstance();
         String uid = firebaseAuth.getCurrentUser().getUid();
         final SwipeRefreshLayout swipeRefreshLayout = (SwipeRefreshLayout)findViewById(R.id.refresh);

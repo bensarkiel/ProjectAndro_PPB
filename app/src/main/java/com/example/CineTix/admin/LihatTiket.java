@@ -31,7 +31,7 @@ public class LihatTiket extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.recview_admin_lihat_booking);
-        getSupportActionBar().setTitle("View Booking");
+        getSupportActionBar().setTitle("Lihat Tiket");
         getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.colorSplash)));
         getWindow().setStatusBarColor((ContextCompat.getColor(this,R.color.colorSplash)));
 

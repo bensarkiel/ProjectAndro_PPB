@@ -88,7 +88,7 @@ public class Daftar extends AppCompatActivity {
                     String Email = email.getText().toString().trim();
                     String Password = password.getText().toString().trim();
 
-                    progressDialog.setTitle("Creating new account");
+                    progressDialog.setTitle("Daftar Akun");
                     progressDialog.setMessage("Please wait");
                     progressDialog.show();
 

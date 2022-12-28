@@ -34,7 +34,7 @@ public class BeliTiket extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.recview_user_beli_tiket);
 
-        getSupportActionBar().setTitle("Book Show");
+        getSupportActionBar().setTitle("Beli Tiket");
         getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.colorSplash)));
         getWindow().setStatusBarColor((ContextCompat.getColor(this,R.color.colorSplash)));
 

@@ -28,10 +28,10 @@
 
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="178dp"
+            android:layout_width="match_parent"
             android:layout_height="153dp"
             android:layout_marginTop="20dp"
-            android:src="@drawable/login"
+            android:src="@drawable/cinema"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView" />

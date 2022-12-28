@@ -101,7 +101,7 @@ public class UpdateProfileImage extends AppCompatActivity {
 
         getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.colorBlack)));
         getWindow().setStatusBarColor((ContextCompat.getColor(this,R.color.colorBlack)));
-        getSupportActionBar().setTitle("Profile Pic");
+        getSupportActionBar().setTitle("Foto Profil");
 
         image = (ImageView) findViewById(R.id.view_image);
         firebaseAuth = FirebaseAuth.getInstance();

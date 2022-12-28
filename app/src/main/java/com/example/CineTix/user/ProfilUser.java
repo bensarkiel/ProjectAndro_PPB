@@ -46,7 +46,7 @@ public class ProfilUser extends AppCompatActivity {
         getWindow().setStatusBarColor((ContextCompat.getColor(this,R.color.statusbar)));
 
         setupUI();
-        getSupportActionBar().setTitle("Profile");
+        getSupportActionBar().setTitle("Profil");
 
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override

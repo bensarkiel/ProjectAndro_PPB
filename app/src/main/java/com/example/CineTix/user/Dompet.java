@@ -46,7 +46,7 @@ public class Dompet extends AppCompatActivity {
         getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.statusbar)));
         getWindow().setStatusBarColor((ContextCompat.getColor(this,R.color.statusbar)));
 
-        getSupportActionBar().setTitle("My Wallet");
+        getSupportActionBar().setTitle("Dompet");
         firebaseAuth = FirebaseAuth.getInstance();
         final String uid = firebaseAuth.getCurrentUser().getUid();
 
@@ -173,8 +173,6 @@ public class Dompet extends AppCompatActivity {
                             editText.setError("Enter Amount");
                         }else if (DepositAmount.contentEquals("0")){
                             editText.setError("Enter Amount");
-                        }else if (Deposit >= 2001){
-                            editText.setError("You add only 2000 at a one time");
                         }else {
                             databaseReference = FirebaseDatabase.getInstance().getReference("Account Info").child(uid);
                             databaseReference.addListenerForSingleValueEvent(new ValueEventListener() {

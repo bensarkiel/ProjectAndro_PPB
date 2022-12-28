@@ -179,7 +179,7 @@ public class MenuUser extends AppCompatActivity {
 
     public void logout(){
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle("User Activity");
+        builder.setTitle("Menu");
         builder.setMessage("Are you sure you want to logout ?");
         builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
             @Override

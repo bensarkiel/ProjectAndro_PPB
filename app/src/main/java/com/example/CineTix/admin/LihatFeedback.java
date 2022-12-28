@@ -35,7 +35,7 @@ public class LihatFeedback extends AppCompatActivity {
         getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.colorSplash)));
         getWindow().setStatusBarColor((ContextCompat.getColor(this,R.color.colorSplash)));
 
-        getSupportActionBar().setTitle("View Feedback");
+        getSupportActionBar().setTitle("Lihat Feedback");
         final SwipeRefreshLayout swipeRefreshLayout = (SwipeRefreshLayout)findViewById(R.id.refresh);
         swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override

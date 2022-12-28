@@ -172,7 +172,7 @@ public class UpdateFilmAdapter extends FirebaseRecyclerAdapter<TambahFilm, Updat
             @Override
             public void onClick(final View view) {
                     AlertDialog.Builder builder = new AlertDialog.Builder(view.getContext());
-                    builder.setTitle("Delete Show");
+                    builder.setTitle("Delete Film");
                     builder.setMessage("Are you sure you want to delete show ?");
                     builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                         @Override
