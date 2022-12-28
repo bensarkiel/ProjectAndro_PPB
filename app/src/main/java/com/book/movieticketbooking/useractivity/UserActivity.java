@@ -48,13 +48,11 @@ public class UserActivity extends AppCompatActivity {
 
         firebaseAuth = FirebaseAuth.getInstance();
         final String CurrentUserId = firebaseAuth.getUid();
-
-        upcomingMovie = (Button)findViewById(R.id.upcoming_movie);
+        
         bookShow = (Button)findViewById(R.id.book_show);
         myProfile = (Button)findViewById(R.id.my_profile);
         myBooking = (Button)findViewById(R.id.my_booking);
         feedback = (Button)findViewById(R.id.give_feedback);
-        download = (Button)findViewById(R.id.download_movie);
         account = (Button)findViewById(R.id.user_bank);
 
         account.setOnClickListener(new View.OnClickListener() {
@@ -79,12 +77,6 @@ public class UserActivity extends AppCompatActivity {
             }
         });
 
-        download.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(), DownloadMovie.class));
-            }
-        });
 
         feedback.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -155,13 +147,6 @@ public class UserActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(UserActivity.this, MyProfile.class));
-            }
-        });
-
-        upcomingMovie.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(UserActivity.this, UpcomingMovie.class));
             }
         });
 

@@ -34,7 +34,7 @@ public class PassCode extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_pass_code);
+        setContentView(R.layout.activity_passcode);
 
         getSupportActionBar().hide();
         getWindow().setStatusBarColor((ContextCompat.getColor(getApplicationContext(), colorPrimary)));

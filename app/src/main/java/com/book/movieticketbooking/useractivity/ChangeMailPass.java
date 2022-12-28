@@ -27,7 +27,7 @@ public class ChangeMailPass extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_change_mail_pass);
+        setContentView(R.layout.activity_ubah_email_pass);
 
         setupUI();
         progressDialog = new ProgressDialog(this);

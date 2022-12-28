@@ -52,7 +52,7 @@ public class AddShow extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_add_show);
+        setContentView(R.layout.activity_tambah_film);
 
         setupUI();
 

@@ -74,7 +74,7 @@ public class UpdateShowAdapter extends FirebaseRecyclerAdapter<Addshow, UpdateSh
             public void onClick(View view) {
                 LayoutInflater inflater = LayoutInflater.from(view.getContext());
                 AlertDialog.Builder builder = new AlertDialog.Builder(view.getContext());
-                view = inflater.inflate(R.layout.u_show,null);
+                view = inflater.inflate(R.layout.update_film_form,null);
 
                 TextView textView = (TextView)view.findViewById(R.id.textView);
                 View view1 = (View)view.findViewById(R.id.view);
@@ -209,7 +209,7 @@ public class UpdateShowAdapter extends FirebaseRecyclerAdapter<Addshow, UpdateSh
     @NonNull
     @Override
     public myViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.show_listview,parent,false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.admin_update_film,parent,false);
         return new UpdateShowAdapter.myViewHolder(view);
     }
 

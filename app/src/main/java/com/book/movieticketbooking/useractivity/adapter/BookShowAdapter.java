@@ -83,7 +83,7 @@ public class BookShowAdapter extends FirebaseRecyclerAdapter<Addshow, BookShowAd
                 public void onClick(View view) {
                     LayoutInflater inflater = LayoutInflater.from(view.getContext());
                     AlertDialog.Builder builder = new AlertDialog.Builder(view.getContext());
-                    view = inflater.inflate(R.layout.b_show,null);
+                    view = inflater.inflate(R.layout.beli_tiket_form,null);
 
                     TextView textView = (TextView)view.findViewById(R.id.textView);
                     View view1 = (View)view.findViewById(R.id.view);
@@ -167,7 +167,7 @@ public class BookShowAdapter extends FirebaseRecyclerAdapter<Addshow, BookShowAd
 
                                     LayoutInflater inflater1 = LayoutInflater.from(v.getContext());
                                     AlertDialog.Builder builder1 = new AlertDialog.Builder(v.getContext());
-                                    v = inflater1.inflate(R.layout.payment,null);
+                                    v = inflater1.inflate(R.layout.pembayaran,null);
 
                                     final EditText edit1 = (EditText) v.findViewById(R.id.cardholder_name);
                                     final EditText edit2 = (EditText) v.findViewById(R.id.account_number);
@@ -278,7 +278,7 @@ public class BookShowAdapter extends FirebaseRecyclerAdapter<Addshow, BookShowAd
     @NonNull
     @Override
     public myViewHolder onCreateViewHolder(@NonNull final ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.show_listview2,parent,false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.user_beli_tiket,parent,false);
         return new myViewHolder(view);
     }
 

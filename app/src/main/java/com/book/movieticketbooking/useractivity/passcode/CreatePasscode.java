@@ -28,7 +28,7 @@ public class CreatePasscode extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_create_passcode);
+        setContentView(R.layout.activity_buat_passcode);
 
         getSupportActionBar().hide();
         getWindow().setStatusBarColor((ContextCompat.getColor(getApplicationContext(), colorPrimary)));

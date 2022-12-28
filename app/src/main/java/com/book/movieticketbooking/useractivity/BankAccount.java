@@ -42,7 +42,7 @@ public class BankAccount extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_bank__account);
+        setContentView(R.layout.activity_detail_dompet);
         getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.statusbar)));
         getWindow().setStatusBarColor((ContextCompat.getColor(this,R.color.statusbar)));
 
@@ -84,7 +84,7 @@ public class BankAccount extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 final BottomSheetDialog view = new BottomSheetDialog(BankAccount.this);
-                view.setContentView(R.layout.change_payment_password);
+                view.setContentView(R.layout.ubah_password_pembayaran);
                 view.setCanceledOnTouchOutside(true);
 
                 final EditText editText1= (EditText) view.findViewById(R.id.old_password);
@@ -142,7 +142,7 @@ public class BankAccount extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 final BottomSheetDialog view = new BottomSheetDialog(BankAccount.this);
-                view.setContentView(R.layout.add_amount);
+                view.setContentView(R.layout.tambah_saldo);
                 view.setCanceledOnTouchOutside(true);
 
                 final EditText editText = (EditText) view.findViewById(R.id.add_amount);

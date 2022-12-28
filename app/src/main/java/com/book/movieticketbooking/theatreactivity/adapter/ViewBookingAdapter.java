@@ -39,7 +39,7 @@ public class ViewBookingAdapter extends FirebaseRecyclerAdapter<Viewbooking, Vie
     @NonNull
     @Override
     public myViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.view_user_booking_listview,parent,false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.admin_lihat_tiket,parent,false);
         return new myViewHolder(view);
     }
 

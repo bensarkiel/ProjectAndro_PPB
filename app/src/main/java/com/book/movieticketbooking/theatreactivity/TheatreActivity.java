@@ -4,7 +4,6 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 
@@ -13,7 +12,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
 import com.book.movieticketbooking.R;
 import com.book.movieticketbooking.login.Login;
@@ -26,23 +24,10 @@ public class TheatreActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_theatre_activity);
+        setContentView(R.layout.activity_menu_admin);
 
         setupUI();
 
-        update_Upcoming.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(TheatreActivity.this, UpdateUpcomingShow.class));
-            }
-        });
-        
-        add_upcoming_movie.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(TheatreActivity.this, AddUpcomingMovie.class));
-            }
-        });
 
         add_show.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -65,12 +50,6 @@ public class TheatreActivity extends AppCompatActivity {
             }
         });
 
-        add_movie.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(TheatreActivity.this, AddMovie.class));
-            }
-        });
 
         view_feedback.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -82,13 +61,10 @@ public class TheatreActivity extends AppCompatActivity {
     }
 
     public void setupUI(){
-        add_upcoming_movie = (Button)findViewById(R.id.add_upcoming_movie);
         add_show = (Button)findViewById(R.id.add_show);
         update_show = (Button)findViewById(R.id.update_show);
         view_booking = (Button)findViewById(R.id.view_booking);
-        add_movie = (Button)findViewById(R.id.add_movie);
         view_feedback = (Button)findViewById(R.id.view_feedback);
-        update_Upcoming = (Button)findViewById(R.id.update_upcoming_movie);
 
         firebaseAuth = FirebaseAuth.getInstance();
     }

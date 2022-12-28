@@ -32,7 +32,7 @@ public class BookShow extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_book__show);
+        setContentView(R.layout.activity_beli_tiket);
 
         getSupportActionBar().setTitle("Book Show");
         getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.colorSplash)));
