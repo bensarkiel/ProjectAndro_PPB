@@ -3,16 +3,16 @@ package com.example.CineTix.user.model;
 public class Userfeedback {
     String id;
     String username;
-    String ratingBar;
+    String ulasan;
     String feedback;
 
     public Userfeedback() {
     }
 
-    public Userfeedback(String id, String username, String ratingBar, String feedback) {
+    public Userfeedback(String id, String username, String ulasan, String feedback) {
         this.id = id;
         this.username = username;
-        this.ratingBar = ratingBar;
+        this.ulasan = ulasan;
         this.feedback = feedback;
     }
 
@@ -32,12 +32,12 @@ public class Userfeedback {
         this.username = username;
     }
 
-    public String getRatingBar() {
-        return ratingBar;
+    public String getUlasan() {
+        return ulasan;
     }
 
-    public void setRatingBar(String ratingBar) {
-        this.ratingBar = ratingBar;
+    public void setUlasan(String ulasan) {
+        this.ulasan = ulasan;
     }
 
     public String getFeedback() {

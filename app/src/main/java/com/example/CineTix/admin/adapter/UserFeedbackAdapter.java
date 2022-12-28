@@ -29,7 +29,7 @@ public class UserFeedbackAdapter extends FirebaseRecyclerAdapter<Userfeedback, U
     @Override
     protected void onBindViewHolder(@NonNull myViewHolder holder, int position, @NonNull Userfeedback model) {
         holder.TextView1.setText(model.getUsername());
-        holder.TextView2.setText(model.getRatingBar());
+        holder.TextView2.setText(model.getUlasan());
         holder.TextView3.setText(model.getFeedback());
     }
 
