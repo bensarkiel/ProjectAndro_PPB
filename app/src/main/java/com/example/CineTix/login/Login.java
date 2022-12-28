@@ -14,8 +14,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.CineTix.R;
-import com.example.CineTix.theatreactivity.TheatreActivity;
-import com.example.CineTix.useractivity.UserActivity;
+import com.example.CineTix.admin.MenuAdmin;
+import com.example.CineTix.user.MenuUser;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -48,7 +48,7 @@ public class Login extends AppCompatActivity {
         sing_up.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Login.this, SignUp.class));
+                startActivity(new Intent(Login.this, Daftar.class));
                 finish();
             }
         });
@@ -105,9 +105,9 @@ public class Login extends AppCompatActivity {
                                 public void onDataChange(@NonNull DataSnapshot snapshot) {
                                     String value = String.valueOf(snapshot.child("usertype").getValue());
                                     if (Integer.parseInt(value) == 1) {
-                                        startActivity(new Intent(getApplicationContext(), UserActivity.class));
+                                        startActivity(new Intent(getApplicationContext(), MenuUser.class));
                                     } else {
-                                        startActivity(new Intent(getApplicationContext(), TheatreActivity.class));
+                                        startActivity(new Intent(getApplicationContext(), MenuAdmin.class));
                                     }
                                     progressDialog.dismiss();
                                     Toast.makeText(Login.this, "Login Successful", Toast.LENGTH_SHORT).show();

@@ -8,7 +8,7 @@
     android:id="@+id/refresh"
     android:scrollbars="none"
     android:padding="4dp"
-    tools:context=".theatreactivity.ViewFeedback">
+    tools:context=".admin.LihatFeedback">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"

@@ -9,7 +9,7 @@
     android:id="@+id/refresh"
     android:scrollbars="none"
     android:padding="4dp"
-    tools:context=".theatreactivity.UpdateShow">
+    tools:context=".admin.UpdateFilm">
 
     <RelativeLayout
         android:layout_width="match_parent"

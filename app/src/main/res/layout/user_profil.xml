@@ -10,7 +10,7 @@
     android:paddingLeft="15dp"
     android:id="@+id/refresh_layout"
     android:background="#DAA520"
-    tools:context=".useractivity.MyProfile">
+    tools:context=".user.ProfilUser">
 
     <ScrollView
         android:layout_width="match_parent"

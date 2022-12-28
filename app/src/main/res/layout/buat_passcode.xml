@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".useractivity.passcode.CreatePasscode">
+    tools:context=".user.passcode.CreatePasscode">
 
     <com.hanks.passcodeview.PasscodeView
         android:id="@+id/passcodeView"

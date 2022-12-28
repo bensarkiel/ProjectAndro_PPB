@@ -10,7 +10,7 @@
     android:paddingTop="20dp"
     android:paddingRight="20dp"
     android:scrollbars="none"
-    tools:context=".useractivity.UpdateUserProfile">
+    tools:context=".user.UpdateUserProfile">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"

@@ -8,7 +8,7 @@
     android:scrollbars="none"
     android:id="@+id/refresh"
     android:padding="4dp"
-    tools:context=".theatreactivity.ViewBooking">
+    tools:context=".admin.LihatTiket">
 
     <RelativeLayout
         android:layout_width="match_parent"

@@ -11,7 +11,7 @@
     android:paddingLeft="20dp"
     android:background="#DAA520"
     android:id="@+id/refresh_layout"
-    tools:context=".useractivity.BankAccount">
+    tools:context=".user.Dompet">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"

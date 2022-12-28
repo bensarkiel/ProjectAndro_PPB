@@ -10,7 +10,7 @@
     android:paddingRight="20dp"
     android:scrollbars="none"
     android:background="#FFFFFF"
-    tools:context=".theatreactivity.AddShow">
+    tools:context=".admin.TambahFilm">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"

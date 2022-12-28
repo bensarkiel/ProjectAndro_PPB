@@ -8,7 +8,7 @@
     android:background="#DC143C"
     android:id="@+id/refresh"
     android:padding="4dp"
-    tools:context=".useractivity.MyBooking">
+    tools:context=".user.LihatBooking">
 
     <RelativeLayout
         android:layout_width="match_parent"

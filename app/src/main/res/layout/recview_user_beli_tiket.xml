@@ -8,7 +8,7 @@
     android:id="@+id/refresh"
     android:background="#DC143C"
     android:padding="4dp"
-    tools:context=".useractivity.BookShow">
+    tools:context=".user.BeliTiket">
 
     <RelativeLayout
         android:layout_width="match_parent"

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/background2"
     android:scrollbars="none"
-    tools:context=".theatreactivity.TheatreActivity">
+    tools:context=".admin.MenuAdmin">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"

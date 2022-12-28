@@ -12,8 +12,8 @@ import android.os.Handler;
 import android.widget.Toast;
 
 import com.example.CineTix.login.Login;
-import com.example.CineTix.theatreactivity.TheatreActivity;
-import com.example.CineTix.useractivity.UserActivity;
+import com.example.CineTix.admin.MenuAdmin;
+import com.example.CineTix.user.MenuUser;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
@@ -49,9 +49,9 @@ public class MainActivity extends AppCompatActivity {
                             String value = String.valueOf(snapshot.child("usertype").getValue());
                             int value2 = Integer.parseInt(value);
                             if (value2 == 1){
-                                startActivity(new Intent(MainActivity.this, UserActivity.class));
+                                startActivity(new Intent(MainActivity.this, MenuUser.class));
                             }else {
-                                startActivity(new Intent(MainActivity.this, TheatreActivity.class));
+                                startActivity(new Intent(MainActivity.this, MenuAdmin.class));
                             }
                             finish();
                         }
