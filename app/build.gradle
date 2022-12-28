@@ -4,7 +4,7 @@ android {
     compileSdkVersion 33
 
     defaultConfig {
-        applicationId "com.book.movieticketbooking"
+        applicationId "com.example.CineTix"
         minSdkVersion 21
         targetSdkVersion 33
         versionCode 1
@@ -19,7 +19,9 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
-    namespace 'com.book.movieticketbooking'
+    packagingOptions {
+        exclude 'META-INF/services/javax.annotation.processing.Processor'
+    }
 }
 
 dependencies {
