@@ -36,7 +36,7 @@ import com.google.firebase.storage.StorageReference;
 import com.squareup.picasso.Picasso;
 
 public class BeliTiketAdapter extends FirebaseRecyclerAdapter<TambahFilm, BeliTiketAdapter.myViewHolder> {
-    
+
     /**
      * Initialize a {@link RecyclerView.Adapter} that listens to a Firebase query. See
      * {@link FirebaseRecyclerOptions} for configuration options.
@@ -68,12 +68,11 @@ public class BeliTiketAdapter extends FirebaseRecyclerAdapter<TambahFilm, BeliTi
         StorageReference storageReference = FirebaseStorage.getInstance().getReference("Add Show");
         storageReference.child(id)
                 .child("Image").getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
-            @Override
-            public void onSuccess(Uri uri) {
-                Picasso.get().load(uri).fit().into(holder.imageView);
-            }
-        });
-
+                    @Override
+                    public void onSuccess(Uri uri) {
+                        Picasso.get().load(uri).fit().into(holder.imageView);
+                    }
+                });
         int AvailableSeat = Integer.parseInt(String.valueOf(model.getAvailable_Seat()));
         if (AvailableSeat == 0){
             holder.book.setEnabled(false);
@@ -183,7 +182,7 @@ public class BeliTiketAdapter extends FirebaseRecyclerAdapter<TambahFilm, BeliTi
                                         public void onDataChange(@NonNull DataSnapshot snapshot) {
                                             HargaFilm movieprice1 = snapshot.getValue(HargaFilm.class);
                                             assert movieprice1 != null;
-                                            button.setText("PAY: "+ movieprice1.getMoviePrice()+" RS.");
+                                            button.setText("BAYAR: Rp"+ movieprice1.getMoviePrice());
                                         }
 
                                         @Override
@@ -222,10 +221,10 @@ public class BeliTiketAdapter extends FirebaseRecyclerAdapter<TambahFilm, BeliTi
                                                 databaseReference2.addListenerForSingleValueEvent(new ValueEventListener() {
                                                     @Override
                                                     public void onDataChange(@NonNull DataSnapshot snapshot) {
-                                                        String HolderName = String.valueOf(snapshot.child("NamaAkun").getValue());
-                                                        String HolderAccount = String.valueOf(snapshot.child("NomorAkun").getValue());
-                                                        String HolderPassword = String.valueOf(snapshot.child("AkunPassword").getValue());
-                                                        int AvailableBalance = Integer.parseInt(String.valueOf(snapshot.child("UangAkun").getValue()));
+                                                        String HolderName = String.valueOf(snapshot.child("accountHolderName").getValue());
+                                                        String HolderAccount = String.valueOf(snapshot.child("accountNumber").getValue());
+                                                        String HolderPassword = String.valueOf(snapshot.child("accountPassword").getValue());
+                                                        int AvailableBalance = Integer.parseInt(String.valueOf(snapshot.child("accountMoney").getValue()));
                                                         int Price = booking_Seat2 * Movie_Price;
                                                         if (!Name.equals(HolderName)){
                                                             edit1.setError("Holder name is incorrect");
@@ -265,7 +264,7 @@ public class BeliTiketAdapter extends FirebaseRecyclerAdapter<TambahFilm, BeliTi
                                             }
                                         }
                                     });
-                                   alertDialog.dismiss();
+                                    alertDialog.dismiss();
                                 }
                             }
                         }

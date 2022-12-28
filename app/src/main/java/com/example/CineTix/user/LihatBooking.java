@@ -17,7 +17,7 @@ import android.view.MenuItem;
 import android.widget.SearchView;
 
 import com.example.CineTix.user.model.Booking;
-import com.example.CineTix.user.adapter.UserBookingAdapter;
+import com.example.CineTix.user.adapter.LihatTiketAdapter;
 import com.example.CineTix.R;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.firebase.auth.FirebaseAuth;
@@ -27,7 +27,7 @@ public class LihatBooking extends AppCompatActivity {
 
     private FirebaseAuth firebaseAuth;
     private RecyclerView recyclerView;
-    private UserBookingAdapter user_booking_adapter;
+    private LihatTiketAdapter user_booking_adapter;
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
@@ -58,7 +58,7 @@ public class LihatBooking extends AppCompatActivity {
         FirebaseRecyclerOptions<Booking> options = new FirebaseRecyclerOptions.Builder<Booking>().
                 setQuery(FirebaseDatabase.getInstance().getReference("Booking").child(uid),Booking.class).build();
 
-        user_booking_adapter = new UserBookingAdapter(options);
+        user_booking_adapter = new LihatTiketAdapter(options);
         recyclerView.setAdapter(user_booking_adapter);
     }
 
@@ -104,7 +104,7 @@ public class LihatBooking extends AppCompatActivity {
                         .setQuery(FirebaseDatabase.getInstance().getReference("Booking").child(uid).orderByChild("movieName").startAt(query).endAt(query+"\uf8ff"),Booking.class)
                         .build();
 
-        user_booking_adapter = new UserBookingAdapter(options);
+        user_booking_adapter = new LihatTiketAdapter(options);
         user_booking_adapter.startListening();
         recyclerView.setAdapter(user_booking_adapter);
     }

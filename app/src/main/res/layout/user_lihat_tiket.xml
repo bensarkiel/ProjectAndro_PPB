@@ -78,7 +78,7 @@
             android:id="@+id/text4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Nomor Kursi:"
+            android:text="Jumlah Kursi:"
             android:textSize="15dp"
             android:textStyle="bold"
             android:textColor="#000000"

@@ -19,7 +19,7 @@ import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.squareup.picasso.Picasso;
 
-public class UserBookingAdapter extends FirebaseRecyclerAdapter<Booking, UserBookingAdapter.myViewHolder> {
+public class LihatTiketAdapter extends FirebaseRecyclerAdapter<Booking, LihatTiketAdapter.myViewHolder> {
 
     /**
      * Initialize a {@link RecyclerView.Adapter} that listens to a Firebase query. See
@@ -27,7 +27,7 @@ public class UserBookingAdapter extends FirebaseRecyclerAdapter<Booking, UserBoo
      *
      * @param options
      */
-    public UserBookingAdapter(@NonNull FirebaseRecyclerOptions<Booking> options) {
+    public LihatTiketAdapter(@NonNull FirebaseRecyclerOptions<Booking> options) {
         super(options);
     }
 
